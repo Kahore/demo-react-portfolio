@@ -18,8 +18,10 @@ const Navbar = () => {
         </li>
         <li>
           <a
+            download
+            target="_blank"
             className="bg-gradient-to-r from-amber-500 text- to-orange-500 text-white px-4 py-2 border-none rounded-md ml-8"
-            href="#"
+            href="Konstantin_Golubkin_CV.pdf"
           >
             Resume
           </a>
