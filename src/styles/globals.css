@@ -3,18 +3,25 @@
 @tailwind utilities;
 @layer base {
   @font-face {
-    font-family: "Fira Sans Condensed", sans-serif;
-    src: url("../../public/fonts/FiraSansCondensed-Regular.woff2");
+    font-family: 'Fira Sans Condensed';
+    src: url('../../public/fonts/FiraSansCondensed-Regular.woff2')
+        format('woff2'),
+      url('../../public/fonts/FiraSansCondensed-Regular.ttf') format('truetype');
     font-weight: 400;
   }
   @font-face {
-    font-family: "Fira Sans Condensed", sans-serif;
-    src: url("../../public/fonts/FiraSansCondensed-Medium.woff2");
+    font-family: 'Fira Sans Condensed';
+    src: url('../../public/fonts/FiraSansCondensed-Medium.woff2')
+        format('woff2'),
+      url('../../public/fonts/FiraSansCondensed-Medium.ttf') format('truetype');
     font-weight: 500;
   }
   @font-face {
-    font-family: "Fira Sans Condensed", sans-serif;
-    src: url("../../public/fonts/FiraSansCondensed-SemiBold.woff2");
+    font-family: 'Fira Sans Condensed';
+    src: url('../../public/fonts/FiraSansCondensed-SemiBold.woff2')
+        format('woff2'),
+      url('../../public/fonts/FiraSansCondensed-SemiBold.ttf')
+        format('truetype');
     font-weight: 700;
   }
 
@@ -23,18 +30,13 @@
     padding: 0;
     margin: 0;
   }
+  html,
+  body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  font-family: "Fira Sans Condensed", sans-serif;
-}
-
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-

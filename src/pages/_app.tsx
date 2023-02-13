@@ -1,6 +1,14 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
+import Container from '@/shared/Container'
+import { ThemeContextProvider } from '@/store/theme'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <ThemeContextProvider>
+      <Container>
+        <Component {...pageProps} />
+      </Container>
+    </ThemeContextProvider>
+  )
 }
